@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2883a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-esquerdo h1 {
+    color: white;
+    font-size: 25pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 5px 10px #2b2b2b;
+}
+
+.pedido {
+    width: 35vw;
+}
+
+.login-direito {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-direito h1 {
+    text-align: center;
+    color: #333;
+}
+
+.card-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+#formulario {
+    width: 90%;
+    height: 350px;
+}
+
+.entrada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entrada label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 12pt;
+    cursor: text;
+}
+
+.entrada input {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000056;
+    font-size: 12pt;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    box-shadow: 0 5px 10px #00000056;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.criar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.criar a {
+    color: #218838;
+    text-decoration: none;
+}
+
+.criar a:hover {
+    color: #218838;
+    text-decoration: underline;
+}
+
+.mensagem-erro {
+    text-align: center;
+    margin: 30px;
+    color: red;
+}

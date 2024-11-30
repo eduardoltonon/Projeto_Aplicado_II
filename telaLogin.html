@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../CSS/telaLogin.css">
+</head>
+<body>
+    <!-- Tela de login -->
+     <div class="login">
+        <div class="login-esquerdo">
+            <h1>Faça parte do nosso time</h1>
+            <img src="../SVG/pedido.svg" class="pedido" alt="Pedido">
+        </div>
+        <div>
+            <div class="login-direito">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                <form id="formulario">
+                    <!-- Digitar usuário -->
+                    <div class="entrada">
+                        <label for="nome">Usuário:</label>
+                        <input type="text" id="nome" placeholder="Digite seu usuário" required>
+                    </div>
+                    <!-- Digitar senha -->
+                    <div class="entrada">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <!-- Botão entrar -->
+                    <button class="btn" type="submit">Entrar</button>
+                    <!-- Criar conta link -->
+                    <div class="criar">
+                        <p>Não Tem Uma Conta?<pre> </pre></p>
+                        <a href="../Html/cadastro.html">Criar conta</a>
+                    </div>
+                    <p id="mensagemErro" class="mensagem-erro"></p>
+                </form>
+                </div>
+            </div>
+        </div>
+    
+        <script src="../JavaScript/telaLogin.js"></script>
+    </body>
+    </html>
+    </div>

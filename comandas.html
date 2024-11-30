@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandas</title>
+    <link rel="stylesheet" href="../CSS/comandas.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Sistema de Comandas</h1>
+            <div class="sair">
+                <a href="../Html/telaLogin.html">Sair</a>
+            </div>
+        </div>
+
+        <nav class="paginas">
+            <div class="menu">
+                <a href="../Html/home.html">Menu</a>
+            </div>
+        </nav>
+    </header>
+
+    <header class="comandas">
+        <h1>Comandas</h1>
+    </header>
+
+    <div class="contador">
+        <button id="zerarContador" class="btn">Zerar Contador</button>
+    </div>
+
+    <main>
+        <section id="livres" class="comanda-secao" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+            <h2>Comandas Livres</h2>
+            <div id="comandas-livres" class="lista-comandas">
+                <!-- Comandas livres serão adicionadas aqui -->
+            </div>
+        </section>
+
+        <section id="em-andamento" class="comanda-secao" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+            <h2>Pedidos em Andamento</h2>
+            <div id="comandas-andamento" class="lista-comandas">
+                <!-- Comandas em andamento serão adicionadas aqui -->
+            </div>
+        </section>
+
+        <section id="prontas" class="comanda-secao" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+            <h2>Pedidos Prontos</h2>
+            <div id="comandas-prontas" class="lista-comandas">
+                <!-- Comandas prontas serão adicionadas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Sistema de Comandas</p>
+    </footer>
+
+    <script src="../JavaScript/comandas.js"></script>
+</body>
+</html>

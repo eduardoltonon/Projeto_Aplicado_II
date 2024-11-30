@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comandas</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="container">
+        <header class="logo">
+            <h1>Sistema de Comandas</h1>
+            <!-- Sair -->
+            <div class="sair">
+                <a href="../Html/telaLogin.html">Sair</a>
+            </div>
+        </header>
+        <!-- Paginas (MENU, COMANDAS, WHATSAPP, CONFIG, SAIR)  -->
+        <header class="paginas">
+            <div class="comandas">
+                <a href="../Html/comandas.html">Comandas</a>
+            </div>
+        </header>
+        <main>
+            <header class="menu1">
+                <h1>Menu</h1>
+            </header>
+            
+            <div class="menu2">
+                <!-- Itens do Menu -->
+                <section id="itens">
+                    
+                    <div class="item">
+                        <img src="../Images/pizza.jpg" alt="Pizza" onclick="adicionar('Pizza')">
+                        <p>Pizza <li id="item">R$ 30,00</li></p>
+                    </div>
+                
+                    <div class="item">
+                        <img src="../Images/hamburguer.jpg" alt="Hamburguer" onclick="adicionar('Hamburguer')">
+                        <p>Hamburguer <li>R$ 25,00</li></p>
+                    </div>
+                
+                    <div class="item">
+                        <img src="../Images/sushi.jpg" alt="Sushi" onclick="adicionar('Sushi')">
+                        <p>Sushi <li>R$ 50,00</li></p>
+                    </div>
+            
+                    <div class="item">
+                        <img src="../Images/salada.jpg" alt="Salada" onclick="adicionar('Salada')">
+                        <p>Salada <li>R$ 20,00</li></p>
+                    </div>
+                
+                    <div class="item">
+                        <img src="../Images/açai.jpg"  alt="Açai" onclick="adicionar('Açai')">
+                        <p>Açai <li>R$ 15,00</li></p>
+                    </div>
+                
+                    <div class="item">
+                        <img src="../Images/coca.jpg" alt="Coca-Cola" onclick="adicionar('Coca-Cola')">
+                        <p>Coca-Cola <li>R$ 7,00</li></p>
+                    </div>
+                </section>
+        
+                <div class="pedidos">
+                    <aside id="lista">
+                        <h2>Pedidos</h2>
+                        <ul id="lista-itens">
+                        <!-- Os itens serão adicionados aqui -->
+                        </ul>
+        
+                        <!-- Valor total -->
+                        <div class="total" id="precoTotal">Total: R$ 0.00</div>
+        
+                        <!-- Pagamento -->
+                        <div class="pagamento"><h3>Pagamento:</h3></div>
+                        <div class="forma">
+                            <input type="radio" name="paga" id="pix" class="pix" required><img src="../Images/pix.jpg" alt="Pix"><label for="pix">Pix</label><br>
+                        </div> 
+                        <div class="forma">
+                            <input type="radio" name="paga" id="visa" class="visa" required><img src="../Images/visa.jpg" alt="Visa" class="visa"><label for="visa">Visa</label><br>
+                         </div>
+                        <div class="forma">
+                            <input type="radio" name="paga" id="master" class="master" required><img src="../Images/master.jpg" alt="Master"><label for="master">Mastercard</label><br>
+                        </div>
+                        <div class="forma">
+                            <input type="radio" name="paga" id="dinheiro" class="dinheiro" required><img src="../Images/money.jpg" alt="Dinheiro"><label for="dinheiro">Dinheiro</label><br>
+                        </div>
+
+                        <!-- Comer no Local ou Para Levar -->
+                        <div class="local_levar">
+                            <div><h3>Opção:</h3></div>
+                            <div class="local">
+                                <input type="radio" name="opcao" id="local" required>
+                                <label for="local">Comer no Local</label>
+                            </div>
+                            <div class="levar">
+                                <input type="radio" name="opcao" id="levar" required>
+                                <label for="levar">Para Levar</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Botão Salvar -->
+                        <button type="button" id="btnConfirmar" class="btn">Confirmar</button>
+                        <div id="mensagemErro" style="color: red; font-weight: bold; margin-top: 10px;"></div>
+        
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 - Sistema de Comandas</p>
+    </footer>
+
+    <script src="../JavaScript/home.js"></script>
+</body>
+</html>
